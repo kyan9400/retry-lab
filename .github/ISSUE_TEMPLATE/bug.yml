@@ -1,0 +1,25 @@
+name: Bug report
+description: Report incorrect behavior or simulation output.
+title: "bug: "
+labels: [bug]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the expected and actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Reproducible scenario
+      description: Paste a Retry Lab scenario link or list every input and seed.
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+    validations:
+      required: true

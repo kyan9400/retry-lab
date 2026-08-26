@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest a simulation or workflow improvement.
+title: "feature: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+    validations:
+      required: true
+  - type: textarea
+    id: model
+    attributes:
+      label: Proposed model
+      description: Explain assumptions, inputs, and measurable outputs.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
