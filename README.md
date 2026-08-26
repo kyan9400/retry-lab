@@ -2,6 +2,7 @@
 
 [![CI](https://github.com/kyan9400/retry-lab/actions/workflows/ci.yml/badge.svg)](https://github.com/kyan9400/retry-lab/actions/workflows/ci.yml)
 [![Deploy](https://github.com/kyan9400/retry-lab/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/kyan9400/retry-lab/actions/workflows/deploy-pages.yml)
+[![Release](https://img.shields.io/github/v/release/kyan9400/retry-lab)](https://github.com/kyan9400/retry-lab/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-1239c7.svg)](LICENSE)
 
 An interactive, deterministic simulator for comparing retry and jitter strategies under a shared outage and constrained recovery capacity.
@@ -61,6 +62,8 @@ pnpm build
 ```
 
 The suite covers determinism, capacity enforcement, collision behavior, bounded configuration, versioned persistence, strategy selection, scenario sharing, and controls. GitHub Actions repeats lint, tests, and the production build on every pull request and deploys `main` to GitHub Pages.
+
+Version tags run the complete quality suite and publish immutable source and production-site archives. The Pages workflow also verifies the repository asset prefix before deployment.
 
 ## Architecture
 

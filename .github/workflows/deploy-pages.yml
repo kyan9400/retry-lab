@@ -41,6 +41,9 @@ jobs:
       - name: Build site
         run: pnpm build:pages
 
+      - name: Verify repository asset base
+        run: grep -q '"/retry-lab/assets/' dist/index.html
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:

@@ -1,7 +1,7 @@
 {
   "name": "retry-lab",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An interactive simulator for comparing retry, backoff, and jitter strategies.",
   "author": "Hassan Ak",
   "license": "MIT",
@@ -16,7 +16,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
-    "build:pages": "pnpm build -- --mode pages",
+    "build:pages": "tsc --noEmit && vite build --mode pages",
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest",
