@@ -4,3 +4,8 @@ coverage
 .DS_Store
 *.local
 *.log
+
+# Environment files (keep the example)
+.env
+.env.*
+!.env.example
